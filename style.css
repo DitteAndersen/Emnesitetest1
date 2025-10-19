@@ -1,0 +1,311 @@
+/**************************** RESET START *****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**************************** HEADER / MENU START *****************************/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+}
+body {
+  background: #f6f4ef;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 45px;
+  margin-right: 40px;
+}
+
+.menu a {
+  display: block;
+  padding: 25px 10px 0 10px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.menu a:hover {
+  color: #0433ff;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+/**************************** HEADER / MENU END *****************************/
+
+/**************************** HERO START *****************************/
+.hero {
+  position: relative;
+  z-index: 0;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/**************************** HERO END *****************************/
+
+/**************************** INTRO START *****************************/
+.intro {
+  background: #fff;
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+.intro h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/**************************** INTRO END *****************************/
+
+/**************************** EVENTS START *****************************/
+.events h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+  padding: 60px 0;
+  margin-bottom: 10px;
+}
+
+.grid_3col_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.grid_3col_1-1-1 .event-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.grid_3col_1-1-1 .event-card h2 {
+  font-family: "Press Start 2P";
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.4;
+  -webkit-text-stroke: 0.5px currentColor;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+.grid_3col_1-1-1 .event-card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.events {
+  margin-bottom: 80px;
+}
+/**************************** EVENTS END *****************************/
+
+/**************************** 2-COL SEKTION START *****************************/
+.grid_2col_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.grid_2col_1-1 div {
+  width: 100%;
+  height: 100%;
+}
+.grid_2col_1-1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+/**************************** 2-COL SEKTION END *****************************/
+
+/**************************** READMORE START *****************************/
+.readmore {
+  margin: 120px 0 80px;
+}
+.readmore .readmore-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+.readmore .readmore-card h2 {
+  font-family: "Press Start 2P";
+  font-size: 0.78rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.4;
+  -webkit-text-stroke: 0.5px currentColor;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+/**************************** READMORE END *****************************/
+
+/**************************** FOOTER START *****************************/
+.footer {
+  background: #0000ff;
+  color: #f6f4ef;
+  text-align: center;
+  padding: 30px 20px 60px;
+  position: relative;
+}
+.footer h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.footer .icons img {
+  width: 35px;
+  margin: 0 10px;
+}
+.footer .privacy {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 17px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+.footer .line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  width: 120px;
+  height: 1px;
+  background: #f6f4ef;
+}
+/**************************** FOOTER END *****************************/
+
+/**************************** RESPONSIVE START *****************************/
+@media (max-width: 1000px) {
+  .grid_3col_1-1-1 {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background: transparent;
+    border: 0;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    background: #faf7f2;
+    z-index: 1;
+  }
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+  nav.active .menu a {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: end;
+  }
+
+  .grid_2col_1-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid_2col_1-1 div {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid_3col_1-1-1 {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+  .hero img {
+    height: 300px; /* gør billedet højere på mobil */
+    object-fit: cover; /* sørger for at det ikke bliver forvrænget */
+  }
+}
+
+/**************************** RESPONSIVE END *****************************/

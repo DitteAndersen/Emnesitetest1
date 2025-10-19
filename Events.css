@@ -1,0 +1,153 @@
+/**************************** RESET START *****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/**************************** EVENTS HEADER *****************************/
+.events-header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+
+.events-header .events-line {
+  width: 60%;
+  max-width: 500px;
+  height: 1px;
+  background: black;
+  margin: 1rem auto;
+}
+
+.events-header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+/**************************** EVENTS HEADER END *****************************/
+/**************************** EVENTS BOXES*****************************/
+.places-section {
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  padding: 0 60px;
+}
+
+.places-section h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  letter-spacing: 3px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 60px 0 20px;
+}
+
+.places-section h1::after {
+  content: none;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.place-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.place-card h2 {
+  font-family: "Press Start 2P";
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  -webkit-text-stroke: 0.5px currentColor;
+  margin-bottom: 0;
+}
+
+.place-card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.place-line {
+  width: 60%;
+  max-width: 500px;
+  height: 1px;
+  background: black;
+  margin: 5rem auto;
+}
+
+@media (max-width: 600px) {
+  .places-section {
+    padding: 0;
+  }
+
+  .places-grid,
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 12px;
+  }
+
+  .place-card img,
+  .category-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .places-section h1,
+  .categories h1 {
+    text-align: center;
+  }
+}
+/**************************** EVENTS BOXES END *****************************/
+
+/**************************** BACK LINK *****************************/
+.events-back {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.events-back a {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+.events-back a:hover {
+  color: #0433ff;
+}
+
+@media (max-width: 600px) {
+  .events-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .events-back a {
+    display: inline-block;
+  }
+}
+/**************************** BACK LINK END *****************************/

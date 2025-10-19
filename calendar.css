@@ -1,0 +1,151 @@
+/**************************** RESET START *****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/**************************** CALENDAR HEADER *****************************/
+.calendar-header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.calendar-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.calendar-header .calendar-line {
+  width: 60%;
+  max-width: 500px;
+  height: 1px;
+  background: black;
+  margin: 1rem auto;
+}
+
+.calendar-header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+.hero {
+  position: relative;
+  z-index: 0;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/***************************** CALENDAR HEADER END *****************************/
+
+/**************************** TEXT START + KNAP *****************************/
+
+.calendar-subscribe {
+  padding: 4rem 2rem;
+  max-width: 1100px; /* eller 1200px afhængig af din designbredde */
+  margin: 0 auto;
+}
+
+.calendar-subscribe-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.calendar-subscribe-header h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  max-width: 1100px;
+}
+
+.calendar-subscribe-header button {
+  background: black;
+  color: #f9f8f6;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+}
+
+.calendar-subscribe-header button:hover {
+  background: #222;
+}
+
+.calendar-subscribe-text {
+  max-width: 1100px;
+  margin-left: 0;
+}
+
+.calendar-subscribe-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 700px) {
+  .calendar-subscribe-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendar-subscribe-header button {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+/**************************** TEXT + KNAP END *****************************/
+
+/**************************** BACK LINK START *****************************/
+
+.calendar-back {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.calendar-back a {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+.calendar-back a:hover {
+  color: #0433ff;
+}
+
+@media (max-width: 600px) {
+  .calendar-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .calendar-back a {
+    display: inline-block;
+  }
+}
+/**************************** BACK LINK END *****************************/

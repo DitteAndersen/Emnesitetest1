@@ -1,0 +1,138 @@
+/**************************** RESET START *****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/**************************** ABOUT HEADER *****************************/
+.About-header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.About-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+
+.About-header .About-line {
+  width: 60%;
+  max-width: 500px;
+  height: 1px;
+  background: black;
+  margin: 1rem auto;
+}
+
+.About-header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+/**************************** ABOUT HEADER END *****************************/
+/**************************** HERO *****************************/
+.hero {
+  position: relative;
+  z-index: 0;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .hero {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hero img {
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+}
+/**************************** HERO END *****************************/
+/**************************** INTRO START *****************************/
+
+.intro {
+  background: #f6f4ef;
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 4rem 0 2rem;
+}
+.intro h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.About-line {
+  width: 60%;
+  max-width: 500px;
+  height: 1px;
+  background: black;
+  margin: 5rem auto;
+}
+
+/**************************** INTRO END *****************************/
+
+/**************************** SUBSCRIBE START *****************************/
+
+/**************************** SUBSCRIBE END *****************************/
+
+/**************************** BACK LINK *****************************/
+.About-back {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.About-back a {
+  font-family: "Press Start 2P";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.About-back a:hover {
+  color: #0433ff;
+}
+
+@media (max-width: 600px) {
+  .About-back {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .About-back a {
+    display: inline-block;
+  }
+}
+/**************************** BACK LINK END *****************************/
