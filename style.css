@@ -68,6 +68,13 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+
+.menu a.active {
+  font-weight: 400;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+
 /**************************** HEADER / MENU END *****************************/
 
 /**************************** HERO START *****************************/
