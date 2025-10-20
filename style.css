@@ -310,8 +310,8 @@ nav {
     padding: 0 12px;
   }
   .hero img {
-    height: 300px; /* gør billedet højere på mobil */
-    object-fit: cover; /* sørger for at det ikke bliver forvrænget */
+    height: 300px;
+    object-fit: cover;
   }
 }
 
