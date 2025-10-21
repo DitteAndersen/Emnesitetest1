@@ -391,9 +391,73 @@ body:not(.home) .burger .line {
     grid-template-columns: 1fr;
     padding: 0 12px;
   }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .hero img {
-    height: 300px;
+    content: url("Home_side/CPHMOBILEwebp.webp");
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero-text h1 {
+    font-family: "Arial Black", sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+  }
+
+  .hero-text p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    line-height: 1.2;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .burger .line {
+    background: white;
+  }
+  nav.active .menu a {
+    color: black !important;
+  }
+
+  nav.active .menu a:hover {
+    color: #0433ff !important;
   }
 }
 
