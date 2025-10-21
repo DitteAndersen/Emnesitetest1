@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: #fff;
+  background: transparent;
 }
 body {
   background: #f6f4ef;
@@ -72,7 +72,58 @@ nav {
 .menu a.active {
   font-weight: 400;
   color: #000000;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid currentColor;
+}
+
+body.home header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+body.home .menu a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+body.home .burger .line {
+  background: white;
+}
+
+body.home header.scrolled {
+  background: #f6f4ef;
+}
+
+body.home header.scrolled .menu a {
+  color: black;
+}
+
+body.home header.scrolled .burger .line {
+  background: black;
+}
+
+body:not(.home) header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+body:not(.home) header.scrolled {
+  background: #f6f4ef;
+}
+
+body:not(.home) .menu a {
+  color: black;
+}
+
+body:not(.home) .burger .line {
+  background: black;
 }
 
 /**************************** HEADER / MENU END *****************************/
