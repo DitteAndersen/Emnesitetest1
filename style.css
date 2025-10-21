@@ -48,7 +48,7 @@ nav {
   transition: color 0.3s;
   text-align: end;
   font-family: "Inter", sans-serif;
-  font-weight: 350;
+  font-weight: 400;
 }
 .menu a:hover {
   color: #0433ff;
@@ -106,18 +106,21 @@ body.home header.scrolled .burger .line {
 }
 
 body:not(.home) header {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
-  left: 0;
-  background: transparent;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f6f4ef;
+  transition: background-color 0.4s ease;
 }
 
 body:not(.home) header.scrolled {
   background: #f6f4ef;
+  box-shadow: none;
 }
-
 body:not(.home) .menu a {
   color: black;
 }
@@ -136,8 +139,36 @@ body:not(.home) .burger .line {
 .hero img {
   width: 100%;
   height: auto;
+  max-height: 100vh;
   display: block;
 }
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-family: "Arial Black", sans-serif;
+  font-weight: 800;
+  font-size: 7rem;
+  letter-spacing: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  letter-spacing: 1rem;
+}
+
 /**************************** HERO END *****************************/
 
 /**************************** INTRO START *****************************/
