@@ -54,7 +54,18 @@
 
     <main>
       <section class="hero">
-        <img src="Home_side/CPHSOCIAL.webp" alt="Forside billede" />
+        <picture>
+          <source
+            srcset="Home_side/CPHMOBILE.webp?v=2"
+            media="(max-width: 600px)"
+            type="image/webp"
+          />
+          <img
+            src="Home_side/CPHSOCIAL.webp?v=2"
+            alt="Forside billede"
+            class="hero-img"
+          />
+        </picture>
         <div class="hero-text">
           <h1>CPH SOCIAL</h1>
           <p>Events in Copenhagen</p>
