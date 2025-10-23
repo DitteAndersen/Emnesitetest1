@@ -141,6 +141,7 @@ body:not(.home) .burger .line {
   height: auto;
   max-height: 100vh;
   display: block;
+  filter: brightness(0.75);
 }
 .hero-text {
   position: absolute;
@@ -164,7 +165,7 @@ body:not(.home) .burger .line {
 
 .hero-text p {
   font-family: "Inter", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(1rem, 2vw, 1.6rem);
   letter-spacing: 1rem;
 }
@@ -397,6 +398,7 @@ body:not(.home) .burger .line {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    filter: brightness(0.75);
   }
 
   .hero img {
