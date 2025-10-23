@@ -47,6 +47,19 @@ body {
   height: auto;
   display: block;
 }
+@media (max-width: 600px) {
+  .calendar-hero {
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .calendar-hero img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 /***************************** CALENDAR HEADER END *****************************/
 
 /**************************** TEXT START + KNAP *****************************/

@@ -40,21 +40,21 @@ body {
 
 /**************************** ABOUT HEADER END *****************************/
 /**************************** HERO *****************************/
-.hero {
+.about-hero {
   position: relative;
   z-index: 0;
 }
-.hero img {
+.about-hero img {
   width: 100%;
   height: auto;
   display: block;
 }
 @media (max-width: 600px) {
-  .hero {
+  .about-hero {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .hero img {
+  .about-hero img {
     height: 300px;
     object-fit: cover;
     display: block;
