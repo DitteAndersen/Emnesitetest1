@@ -13,7 +13,7 @@ body {
 /**************************** CALENDAR HEADER *****************************/
 .calendar-header {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 2rem;
 }
 
 .calendar-header h1 {
@@ -38,16 +38,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.08em;
 }
-.hero {
+.calendar-hero {
   position: relative;
   z-index: 0;
 }
-.hero img {
+.calendar-hero img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 /***************************** CALENDAR HEADER END *****************************/
 
 /**************************** TEXT START + KNAP *****************************/
