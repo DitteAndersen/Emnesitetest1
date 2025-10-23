@@ -398,7 +398,6 @@ body:not(.home) .burger .line {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    filter: brightness(0.75);
   }
 
   .hero img {
@@ -407,6 +406,7 @@ body:not(.home) .burger .line {
     object-fit: cover;
     object-position: center;
     display: block;
+    filter: brightness(0.75);
   }
 
   .hero-text {
